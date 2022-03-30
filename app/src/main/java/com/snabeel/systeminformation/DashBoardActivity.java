@@ -2,6 +2,7 @@ package com.snabeel.systeminformation;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
@@ -33,7 +34,7 @@ public class DashBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDashBoardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         try{
             String isFromAvgTime = getIntent().getStringExtra("FromWhichBtn");
             if(isFromAvgTime.equals("AvgTime")){

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
@@ -92,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements CallBackForReceiv
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        binding.progressBar1.setVisibility(View.GONE);
         networkChangeListener = new NetworkChangeListener(this);
         registerReceiver(networkChangeListener,new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
         registerReceiver(mBatInfoReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
@@ -317,8 +321,6 @@ public class MainActivity extends AppCompatActivity implements CallBackForReceiv
     class MyLocationListener implements LocationListener {
         @Override
         public void onLocationChanged(@NonNull Location location) {
-            Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
-            List<Address> addresses;
             updateUI(location);
         }
     }

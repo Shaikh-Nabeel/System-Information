@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091770676017",
+    "firebase_url": "https://systeminformation-f9320-default-rtdb.firebaseio.com",
+    "project_id": "systeminformation-f9320",
+    "storage_bucket": "systeminformation-f9320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091770676017:android:fb0e85f27c39dc782e7610",
+        "android_client_info": {
+          "package_name": "com.snabeel.systeminformation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091770676017-f82i9hsqf95nl753dkqob6mo50umevk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snabeel.systeminformation",
+            "certificate_hash": "9091fe672b7ca4d45af616628c877ecd7e4d8a72"
+          }
+        },
+        {
+          "client_id": "1091770676017-cdiceahg8s7ov73q5tnfquj9v0v7ebog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOoWtqgPJGSFpVYBb0nZErCvlImia8YKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091770676017-cdiceahg8s7ov73q5tnfquj9v0v7ebog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
